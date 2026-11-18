@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sparrenwerk · Holzbau-Kit CH – Kalkulation, Offerte & Regierapport in Excel</title>
+<meta name="description" content="Excel-Vorlagen für Schweizer Holzbau- und Zimmereibetriebe: Holzliste mit m³, Dachausmass, Kalkulation, Offerte und Regierapport. Mit MWST 8.1 %.">
+<style>
+:root{--wood:#5b3a1e;--wood2:#8a5a2b;--cream:#faf6ef;--ink:#1f1a14;--muted:#6b6258;--line:#e6dccd}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.55}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+header{background:var(--wood);color:#fff;padding:56px 0 64px}
+.tag{display:inline-block;font-size:13px;letter-spacing:.06em;text-transform:uppercase;background:rgba(255,255,255,.14);padding:4px 10px;border-radius:4px}
+h1{font-size:clamp(28px,5vw,46px);line-height:1.12;margin:16px 0 14px}
+header p{font-size:19px;max-width:640px;opacity:.92;margin:0 0 28px}
+.btn{display:inline-block;background:#f2b134;color:#2a1a08;font-weight:700;text-decoration:none;padding:15px 26px;border-radius:8px;font-size:18px}
+.btn:hover{background:#ffc34d}.small{font-size:14px;opacity:.85;margin-top:12px}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+h2{font-size:28px;margin:0 0 22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px}
+.card h3{margin:0 0 8px;font-size:19px;color:var(--wood)}.card p{margin:0;color:var(--muted)}
+.mock{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:auto;font-size:14px}
+.mock table{border-collapse:collapse;width:100%;min-width:620px}
+.mock th{background:var(--wood);color:#fff;font-weight:600;padding:8px;text-align:left}
+.mock td{padding:7px 8px;border-top:1px solid var(--line)}.in{background:#fff8d6;color:#0000c8}.r{text-align:right}
+ul.check{list-style:none;padding:0;margin:0}ul.check li{padding:7px 0 7px 30px;position:relative}
+ul.check li:before{content:"✓";position:absolute;left:0;color:var(--wood2);font-weight:800}
+.price{background:#fff;border:2px solid var(--wood);border-radius:12px;padding:30px;text-align:center;max-width:460px;margin:0 auto}
+.price .amt{font-size:46px;font-weight:800;color:var(--wood)}.price .sub{color:var(--muted);margin-bottom:20px}
+details{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-bottom:10px}
+summary{font-weight:600;cursor:pointer}
+footer{padding:36px 0;font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<span class="tag">Für Zimmereien & Holzbaubetriebe in der Schweiz</span>
+<h1>Holzliste, Dachausmass und Offerte – in einer Excel-Datei.</h1>
+<p>Gebaut von einem Zimmermann und Vorarbeiter für den Alltag auf dem Bau: Kubatur rechnen, Dach ausmessen, kalkulieren und die Offerte direkt ausdrucken. Ohne Abo, ohne Software-Einführung.</p>
+<a class="btn" href="https://buy.stripe.com/28E6oB4Ok3e949VbdPafS01">Jetzt kaufen – CHF 39</a>
+<div class="small">Einmalzahlung · Sofort-Download · Excel & LibreOffice</div>
+</div></header>
+
+<section><div class="wrap">
+<h2>Was drin ist</h2>
+<div class="grid">
+<div class="card"><h3>Holzliste</h3><p>Anzahl, Länge und Querschnitt eintragen. m³ netto, Verschnitt, m³ brutto und Kosten pro Position rechnen sich selbst. Holzarten per Dropdown.</p></div>
+<div class="card"><h3>Dachausmass</h3><p>Sattel- oder Pultdach: Sparrenlänge, Dachfläche, Anzahl Sparren, Lattung und Konterlattung in Laufmetern, Unterdachbahn inkl. Überlappung.</p></div>
+<div class="card"><h3>Kalkulation</h3><p>Stunden nach Kategorie (Zimmermann, Vorarbeiter, Lernender, Kran), Holz aus der Holzliste, Zusatzmaterial, Zuschläge, Rabatt, MWST.</p></div>
+<div class="card"><h3>Offerte</h3><p>Druckfertig mit deinen Firmendaten, übernimmt die Summen aus der Kalkulation. Gültigkeitsdatum, Zahlungsbedingungen, Unterschriftsfeld.</p></div>
+<div class="card"><h3>Regierapport</h3><p>Stunden und Material pro Einsatz, Total inkl. MWST, Visum Kunde. Ausdrucken oder auf dem Tablet ausfüllen.</p></div>
+<div class="card"><h3>Einmal einrichten</h3><p>Stundenansätze, Holzpreise und MWST-Satz an einem Ort. Alle Blätter greifen darauf zu.</p></div>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<h2>So sieht die Holzliste aus</h2>
+<div class="mock"><table>
+<tr><th>Bauteil</th><th>Holzart</th><th class="r">Anz.</th><th class="r">L m</th><th class="r">B cm</th><th class="r">H cm</th><th class="r">m³ brutto</th><th class="r">CHF</th></tr>
+<tr><td class="in">Sparren</td><td class="in">KVH C24 gehobelt</td><td class="in r">14</td><td class="in r">6.20</td><td class="in r">8</td><td class="in r">22</td><td class="r">1.680</td><td class="r">1'159.51</td></tr>
+<tr><td class="in">Pfette</td><td class="in">BSH GL24h</td><td class="in r">3</td><td class="in r">12.80</td><td class="in r">16</td><td class="in r">24</td><td class="r">1.622</td><td class="r">1'540.92</td></tr>
+<tr><td class="in">Schwelle</td><td class="in">Bauholz C24 sägerau</td><td class="in r">4</td><td class="in r">6.00</td><td class="in r">12</td><td class="in r">12</td><td class="r">0.380</td><td class="r">197.68</td></tr>
+</table></div>
+<p style="color:var(--muted);font-size:14px">Gelb = deine Eingaben. Der Rest rechnet. Beispielwerte, 10 % Verschnitt.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>Für wen?</h2>
+<ul class="check">
+<li>Kleine Zimmereien und Holzbaubetriebe ohne teure Branchensoftware</li>
+<li>Selbstständige Zimmerleute, die schneller offerieren wollen</li>
+<li>Vorarbeiter, die auf der Baustelle Mengen und Rapporte sauber festhalten</li>
+</ul>
+</div></section>
+
+<section id="kaufen"><div class="wrap">
+<div class="price">
+<div>Holzbau-Kit CH</div>
+<div class="amt">CHF 39</div>
+<div class="sub">Einmalig · 1 Excel-Datei mit 7 Blättern · Download direkt nach Zahlung</div>
+<a class="btn" href="https://buy.stripe.com/28E6oB4Ok3e949VbdPafS01">Jetzt kaufen</a>
+<div class="small" style="color:var(--muted)">Zahlung mit Karte oder TWINT über Stripe</div>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<h2>Fragen</h2>
+<details><summary>Brauche ich Microsoft Excel?</summary><p>Excel ab 2010, Excel für Mac oder das kostenlose LibreOffice. Google Sheets funktioniert ebenfalls, die Dropdowns eventuell nicht.</p></details>
+<details><summary>Ersetzt das Dachausmass eine Statik?</summary><p>Nein. Es rechnet Mengen für Material und Offerte. Querschnitte und Statik legt eine Fachperson fest.</p></details>
+<details><summary>Was ist, wenn ich nicht MWST-pflichtig bin?</summary><p>MWST-Satz in den Einstellungen auf 0 % setzen, alle Blätter passen sich an.</p></details>
+<details><summary>Kann ich die Vorlagen anpassen?</summary><p>Ja, die Blätter sind nicht gesperrt. Logo, Texte und Spalten kannst du frei ändern.</p></details>
+</div></section>
+
+<footer><div class="wrap">
+<strong>Impressum</strong><br>
+Sparrenwerk – Fabian Birchmeier<br>Haldenweg 21, 5303 Würenlingen, Schweiz<br>E-Mail: <a href="mailto:Fabian.birchmeier97@hotmail.com">Fabian.birchmeier97@hotmail.com</a><br><br>
+Digitales Produkt zum Download. Lizenz für die Nutzung in einem Betrieb.<br><br><strong>Datenschutz</strong><br>Diese Seite setzt keine Cookies und kein Tracking ein. Die Zahlung wird von Stripe abgewickelt; dabei gelten die Datenschutzbestimmungen von Stripe. Ihre Angaben werden nur zur Abwicklung des Kaufs verwendet. Fragen an die E-Mail-Adresse oben.
+</div></footer>
+</body>
+</html>
